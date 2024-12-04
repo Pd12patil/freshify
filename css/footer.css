@@ -1,0 +1,139 @@
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background-color: rgb(218, 235, 251);
+    color: black;
+    border: 0;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+
+.footer-logo img {
+    height: 70px;
+    margin-right: 10px;
+    /* height: 140px;
+    width: 240px; */
+    mix-blend-mode: multiply;
+}
+
+.websitename {
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 24px;
+    margin-top: 50px;
+    /* font-weight: 600; */
+    color: #18283f;
+}
+
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    width: 70%;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+    min-width: 200px;
+}
+
+.footer-column .column-title {
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 50;
+    color: #18283f;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.footer-column ul {
+  font-family: "Kumbh Sans", sans-serif;
+    padding-left: 0;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.footer-column ul li {
+    font-family: "Kumbh Sans", sans-serif;
+    margin: 5px 0;
+}
+
+.footer-column ul li a {
+  font-family: "Kumbh Sans", sans-serif;
+    color: #18283f;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-social {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+.footer-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.footer-img:hover {
+    transform: scale(1.1);
+}
+
+
+.footer-bottom {
+  font-family: "Kumbh Sans", sans-serif;
+    margin-top: 20px;
+    font-size: 22px;
+    color: #18283f;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-logo {
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    .footer-links {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer-column {
+        text-align: center;
+        margin-bottom: 8px;
+        min-width: 100%;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}

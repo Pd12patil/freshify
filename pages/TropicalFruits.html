@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Freshify</title>
+    <link rel="stylesheet" href="../../css/beverages.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bakery-shop.css">
+    <script src="../../js/beverages.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Kumbh+Sans:wght@100..900&family=Parisienne&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/exotic-fruits.png">
+</head>
+<body id="body">
+    <div class="header-container">
+        <a href="../../index.html"><img src="../../img/main-website-logo.webp" class="website-logo"></a>
+        <button class="header-button header-button1">Enter Pin</button>
+        <button class="header-button">Mumbai</button>
+        <input placeholder="Start Shopping" class="input-start-shopping"/>
+        <button class="search-button"><img src="../../icon/search.png" class="search-button-img"></button>
+        <button class="header-button header-button2" onclick="openModal()">Login</button>
+        <a href="#"><img src="/icon/shopping-cart.png" class="shopping-cart"></a>    
+    </div>
+    <div class="pages-container">
+        <a href="#"><li class="pages-text">Festive Gifting</li></a>
+        <a href="#"><li class="pages-text">Grocery</li></a>
+        <a href="/pages/bakery-shop.html"><li class="pages-text">Bakery Shop</li></a>
+        <a href="/pages/ExoticFruit.html"><li class="pages-text"  id="beverages">Exotic Fruits</li></a>
+        <a href="#"><li class="pages-text">Blog</li></a>
+        <a href="/pages/Beverages/beverages.html"><li class="pages-text" >Bevarages</li></a>
+        <a href="#"><li class="pages-text">Snaking</li></a>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <img src="/icon/close.png" class="close-icon" alt="Close" onclick="closeModal()" />
+            <form class="form">
+                <h1 class="form-header">Login</h1>
+
+                <input type="text" placeholder="Enter your name" class="form-input" />
+
+                <input type="email" placeholder="Enter your email" class="form-input" />
+
+                <input type="text" placeholder="Enter your phone number" class="form-input" />
+
+                <input type="text" placeholder="Enter your Address" class="form-input" />
+            </form>
+
+            <button type="button" class="btn-login">
+                Login
+            </button>
+        </div>
+    </div>
+    <hr>
+
+    <div class="pg-container">
+        <div class="filter">
+            <h1 class="filter-header">Filters</h1>
+            <a href="/pages/TropicalFruits.html"><button class="filter-btns">Tropical Fruits</button></a>
+            <a href="/pages/BerriesFruits.html"><button class="filter-btns">Berries Fruits</button></a>
+            <a href="/pages/fruitgames.html"><button class="filter-btns">Fruits Games</button></a>
+        </div>
+        <div class="container2">
+            <p class="container-header">Exotic Fruits > Tropical Fruits </p>
+            <div class="whats-trending-container">
+                <img src="/img/mango.jpg" class="whats-trending-pasta-sause-image" id="img1" alt="Product 1">
+                <p class="card-text" id="txt-1"><b>Mango 1KG</b></p>
+                <div>
+                    <button class="btn-1 btn-11"><del>MRP ₹170</del></button>
+                    <button class="btn-1 btn-11" id="btn1">MRP ₹150</button><br>
+                    <div class="btn-atc-container">
+                        <button class="btn-add-to-cart btn-add-to-cart1">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="whats-trending-container">
+                <img src="/img/Pineapple.jpg" class="whats-trending-pasta-sause-image" id="img1" alt="Product 1">
+                <p class="card-text" id="txt-1"><b>Pineapple</b></p>
+                <div>
+                    <button class="btn-1 btn-11"><del>MRP ₹120</del></button>
+                    <button class="btn-1 btn-11" id="btn1">MRP ₹100</button><br>
+                    <div class="btn-atc-container">
+                        <button class="btn-add-to-cart btn-add-to-cart1">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="whats-trending-container">
+                <img src="/img/Banana.jpg" class="whats-trending-pasta-sause-image" id="img1" alt="Product 1">
+                <p class="card-text" id="txt-1"><b>Banana</b></p>
+                <div>
+                    <button class="btn-1 btn-11"><del>MRP ₹70</del></button>
+                    <button class="btn-1 btn-11" id="btn1">MRP ₹50</button><br>
+                    <div class="btn-atc-container">
+                        <button class="btn-add-to-cart btn-add-to-cart1">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="whats-trending-container">
+                <img src="/img/papai.jpg" class="whats-trending-pasta-sause-image" id="img1" alt="Product 1">
+                <p class="card-text" id="txt-1"><b>Papaya</b></p>
+                <div>
+                    <button class="btn-1 btn-11"><del>MRP ₹50</del></button>
+                    <button class="btn-1 btn-11" id="btn1">MRP ₹40</button><br>
+                    <div class="btn-atc-container">
+                        <button class="btn-add-to-cart btn-add-to-cart1">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="whats-trending-container">
+                <img src="/img/naral.jpg" class="whats-trending-pasta-sause-image" id="img1" alt="Product 1">
+                <p class="card-text" id="txt-1"><b>Coconut</b></p>
+                <div>
+                    <button class="btn-1 btn-11"><del>MRP ₹30</del></button>
+                    <button class="btn-1 btn-11" id="btn1">MRP ₹20</button><br>
+                    <div class="btn-atc-container">
+                        <button class="btn-add-to-cart btn-add-to-cart1">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="whats-trending-container">
+                <img src="/img/Guava.jpg" class="whats-trending-pasta-sause-image" id="img1" alt="Product 1">
+                <p class="card-text" id="txt-1"><b>Guava</b></p>
+                <div>
+                    <button class="btn-1 btn-11"><del>MRP ₹60</del></button>
+                    <button class="btn-1 btn-11" id="btn1">MRP ₹50</button><br>
+                    <div class="btn-atc-container">
+                        <button class="btn-add-to-cart btn-add-to-cart1">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="whats-trending-container">
+                <img src="/img/Passionfruit.jpg" class="whats-trending-pasta-sause-image" id="img1" alt="Product 1">
+                <p class="card-text" id="txt-1"><b>Passionfruit</b></p>
+                <div>
+                    <button class="btn-1 btn-11"><del>MRP ₹40</del></button>
+                    <button class="btn-1 btn-11" id="btn1">MRP ₹30</button><br>
+                    <div class="btn-atc-container">
+                        <button class="btn-add-to-cart btn-add-to-cart1">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="whats-trending-container">
+                <img src="/img/Durian.jpg" class="whats-trending-pasta-sause-image" id="img1" alt="Product 1">
+                <p class="card-text" id="txt-1"><b>Durian</b></p>
+                <div>
+                    <button class="btn-1 btn-11"><del>MRP ₹60</del></button>
+                    <button class="btn-1 btn-11" id="btn1">MRP ₹50</button><br>
+                    <div class="btn-atc-container">
+                        <button class="btn-add-to-cart btn-add-to-cart1">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            </div>       
+        </div>
+    </div>
+    </div>
+    
+    <footer>
+        <table width="100%" class="table-container foot-text">
+            <tr>
+                <td><div class="footer-child-container"><img src="/icon/unnamed.png" class="Logo-image"height="30px"><p class="websitename">Freshify.com</p></div></td>
+                <td class="color">Company</td>
+                <td class="color">Partner Sites</td>
+                <td class="color">Explore</td>
+    
+    
+            </tr>
+            <tr>
+                <td><div class="footer-child-container2"><a href="#"><img src="/icon/facebook.png" class="footer-img"></a>
+                    <a href="#"><img src="/icon/instagram.png" class="footer-img"></a>
+                    <a href="#"><img src="/icon/linkedin (1).png" class="footer-img"></a>
+                    <a href="#"><img src="/icon/github.png" class="footer-img"></a>
+                    <a href="#"><img src="/icon/twitter.png" class="footer-img"></a></div></td>
+                <td>Carrer</td>
+                <td>Proptiger</td>
+                <td>News</a></td>
+    
+            </tr>
+            <tr>
+                <td></td>
+                <td>About Us</td>
+                <td>Grocery</td>
+                <td>Tasty Food</a> </td>
+            </tr>
+            <tr>
+                <td><div class="footer-container">
+                    <p class="foot-text">&copy; 2024 E-commerce Webpage. All rights reserved.</p>
+                </div></td>
+                <td>For Partners</td>
+                <td>Veggies.com</td>
+                <td>Eating Map</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Terms</td>
+                <td>Grocery.com</td>
+                <td>International</td>
+                
+            </tr>
+    
+        </table>
+        
+    </footer>
+    <script>
+        function openModal() {
+            const overlayElement = document.getElementById('overlay');
+            overlayElement.style.display = 'flex';
+        }
+
+        function closeModal() {
+            const overlayElement = document.getElementById("overlay");
+            overlayElement.style.display = "none";
+        }
+    </script>
+</body>
+</html>

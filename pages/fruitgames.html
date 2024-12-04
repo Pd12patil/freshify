@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Freshify</title>
+    <link rel="stylesheet" href="../../css/beverages.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bakery-shop.css">
+    <link rel="stylesheet" href="/css/fruitgames.css">
+    <script src="../../js/beverages.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Kumbh+Sans:wght@100..900&family=Parisienne&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/img/exotic-fruits.png">
+</head>
+<body id="body">
+    <div class="header-container">
+        <a href="../../index.html"><img src="../../img/main-website-logo.webp" class="website-logo"></a>
+        <button class="header-button header-button1">Enter Pin</button>
+        <button class="header-button">Mumbai</button>
+        <input placeholder="Start Shopping" class="input-start-shopping"/>
+        <button class="search-button"><img src="../../icon/search.png" class="search-button-img"></button>
+        <button class="header-button header-button2" onclick="openModal()">Login</button>
+        <a href="#"><img src="/icon/shopping-cart.png" class="shopping-cart"></a>    
+    </div>
+    <div class="pages-container">
+        <a href="#"><li class="pages-text">Festive Gifting</li></a>
+        <a href="#"><li class="pages-text">Grocery</li></a>
+        <a href="/pages/bakery-shop.html"><li class="pages-text">Bakery Shop</li></a>
+        <a href="/pages/ExoticFruit.html"><li class="pages-text"  id="beverages">Exotic Fruits</li></a>
+        <a href="#"><li class="pages-text">Blog</li></a>
+        <a href="/pages/Beverages/beverages.html"><li class="pages-text" >Bevarages</li></a>
+        <a href="#"><li class="pages-text">Snaking</li></a>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <img src="/icon/close.png" class="close-icon" alt="Close" onclick="closeModal()" />
+            <form class="form">
+                <h1 class="form-header">Login</h1>
+
+                <input type="text" placeholder="Enter your name" class="form-input" />
+
+                <input type="email" placeholder="Enter your email" class="form-input" />
+
+                <input type="text" placeholder="Enter your phone number" class="form-input" />
+
+                <input type="text" placeholder="Enter your Address" class="form-input" />
+            </form>
+
+            <button type="button" class="btn-login">
+                Login
+            </button>
+        </div>
+    </div>
+    <hr>
+
+    <div class="pg-container">
+        <div class="filter">
+            <h1 class="filter-header">Filters</h1>
+            <a href="/pages/TropicalFruits.html"><button class="filter-btns">Tropical Fruits</button></a>
+            <a href="/pages/BerriesFruits.html"><button class="filter-btns">Berries Fruits</button></a>
+            <a href="/pages/fruitgames.html"><button class="filter-btns">Fruits Games</button></a>
+        </div>
+            <div class="container2">
+                <p class="container-header">Exotic Fruits > Fruits Games</p>
+                
+                    <div class="activities5">
+                    <h1 class="heading"></span></h1>
+                        <div class="box-container5 eligibility-check games " class="game-demo" >
+                            <div class="box5" class="eligibility-check" >
+                                <img src="/img/card-games.png" alt="">
+                                <h3 id="font-color">Fruit Games</h3>
+                                <p class="text-color">Amazing Games for Kids! Ready to have a blast? Welcome & fun together...!✨</p>
+                                <label for="name" class="text-color" id="label"><b>Enter Your Name:</b></label>
+                                <input type="text" class="typehere" id="name" placeholder="Type here...">
+                                <button class="btn5" id="btn-1" onclick="checkName()">Submit</button>
+                            </div>
+                
+                            <div class=" box-container5 eligibility-check games" id="games" style="display: none;">
+                
+                                <div class="game-card" id="game1">
+                                    <h2>Count Alphabets...</h2>
+                                    <input type="text" id="textInput" placeholder="Type Any Fruit Name Here">
+                                    <button onclick="countAlphabets()" id="game-submit">Submit</button>
+                                    <p id="result1"></p>
+                                    <button class="btn-1 btn-11" id="btn1" onclick="resetAlphabetsGame()" id="game-submit">Clear</button>
+                                </div>
+                                
+                
+                                <div class="game-card" id="game2">
+                                    <h2>Count Words...</h2>
+                                    <input type="text" id="sentenceInput" placeholder="Type Words Related to Fruit">
+                                    <button onclick="countWords()" id="game-submit">Submit</button>
+                                    <p id="result2"></p>
+                                    <button class="btn-1 btn-11" id="btn1" onclick="resetWordsGame()" id="game-submit">Clear</button>
+                                </div>
+                                
+                                <div class="game-card" id="gameFruit">
+                                    <h2>Identify the Fruit...</h2>
+                                    <div id="fruit-image-container">
+                                        <img id="fruit-image" alt="Random Fruit" data-name="apple" class="resized-image" src="/img/apple.png">
+                                    </div>
+                                    <button onclick="chooseFruit('Apple')">Apple</button>
+                                    <button onclick="chooseFruit('Banana')">Banana</button>
+                                    <button onclick="chooseFruit('Orange')">Orange</button>
+                                    <p id="resultFruit"></p>
+                                    <button class="btn-1 btn-11" id="btn1" onclick="resetFruitGame()" id="game-submit">Clear</button>
+                                </div>
+                            </div>
+                        </div> 
+                        
+                    </div>
+            </div>       
+    </div>
+<footer>
+    <table width="100%" class="table-container foot-text">
+        <tr>
+            <td><div class="footer-child-container"><img src="/icon/unnamed.png" class="Logo-image"height="30px"><p class="websitename">Freshify.com</p></div></td>
+            <td class="color">Company</td>
+            <td class="color">Partner Sites</td>
+            <td class="color">Explore</td>
+
+
+        </tr>
+        <tr>
+            <td><div class="footer-child-container2"><a href="#"><img src="/icon/facebook.png" class="footer-img"></a>
+                <a href="#"><img src="/icon/instagram.png" class="footer-img"></a>
+                <a href="#"><img src="/icon/linkedin (1).png" class="footer-img"></a>
+                <a href="#"><img src="/icon/github.png" class="footer-img"></a>
+                <a href="#"><img src="/icon/twitter.png" class="footer-img"></a></div></td>
+            <td>Carrer</td>
+            <td>Proptiger</td>
+            <td>News</a></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td>About Us</td>
+            <td>Grocery</td>
+            <td>Tasty Food</a> </td>
+        </tr>
+        <tr>
+            <td><div class="footer-container">
+                <p class="foot-text">&copy; 2024 E-commerce Webpage. All rights reserved.</p>
+            </div></td>
+            <td>For Partners</td>
+            <td>Veggies.com</td>
+            <td>Eating Map</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Terms</td>
+            <td>Grocery.com</td>
+            <td>International</td>
+            
+        </tr>
+
+    </table>
+    
+</footer>
+<script>
+    function openModal() {
+        const overlayElement = document.getElementById('overlay');
+        overlayElement.style.display = 'flex';
+    }
+
+    function closeModal() {
+        const overlayElement = document.getElementById("overlay");
+        overlayElement.style.display = "none";
+    }
+</script>
+<script src="/js/fruitgames.js"></script>
+</body>
+</html>

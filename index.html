@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freshify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Italiana&family=Kumbh+Sans:wght@100..900&family=Parisienne&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./icon/unnamed.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/beverages.css">
+    <link rel="stylesheet" href="./css/fgoo.css">
+
+</head>
+
+<body>
+    <!-- <div class="header-container">
+        <a href="index.html"><img src="./img/main-website-logo.webp" class="website-logo"></a>
+        <button class="header-button header-button1">Enter Pin</button>
+        <button class="header-button">Mumbai</button>
+        <input placeholder="Start Shopping" class="input-start-shopping"/>
+        <button class="search-button"><img src="./icon/search.png" class="search-button-img"></button>
+        <button class="header-button header-button2" onclick="openModal()">Login</button>
+        <a href="#"><img src="./icon/shopping-cart.png" class="shopping-cart"></a>    
+    </div>
+    <div class="pages-container">
+        <a href="#"><li class="pages-text">Festive Gifting</li></a>
+        <a href="#"><li class="pages-text">Grocery</li></a>
+        <a href="./pages/bakery-shop.html"><li class="pages-text">Bakery Shop</li></a>
+        <a href="./pages/ExoticFruit.html"><li class="pages-text">Exotic Fruits</li></a>
+        <a href="#"><li class="pages-text">Blog</li></a>
+        <a href="./pages/Beverages/beverages.html"><li class="pages-text" >Bevarages</li></a>
+        <a href="#"><li class="pages-text">Snaking</li></a>
+    </div> -->
+
+    <div class="header-container">
+        <img src="./img/main-website-logo.webp" class="website-logo">
+        <button class="header-button header-button1">Enter Pin</button>
+        <button class="header-button header-button3">Mumbai</button>
+        <input placeholder="Start Shopping" class="input-start-shopping"/>
+        <!-- <button class="search-button"><img src="./icon/search.png" class="search-button-img"></button> -->
+        <button class="search-button"><i class="fa-solid fa-magnifying-glass search-button1" ></i></button>
+        <button class="header-button header-button2" onclick="openModal()">Login</button>
+        <a href="#"><i class="fa-solid fa-cart-shopping shopping-cart"></i></a>
+  
+        <!-- <a href="#"><img src="./icon/shopping-cart.png" class="shopping-cart"></a>     -->
+    </div>
+  
+    <div class="pages-container">
+        <a href="./pages/festive gifting.html" ><p class="pages-text">Festive Gifting</p></a>
+        <a href="#"><p class="pages-text">Grocery</p></a>
+        <a href="./pages/bakery-shop.html"><p class="pages-text">Bakery Shop</p></a>
+        <a href="./pages/ExoticFruit.html"><p class="pages-text">Exotic Fruits</p></a>
+        <a href="#"><p class="pages-text">Blog</p></a>
+        <a href="./pages/Beverages/beverages.html"><p class="pages-text">Bevarages</p></a>
+        <a href="#"><p class="pages-text">Snacking</p></a>
+    
+    </div>
+  
+    <i class="fa-solid fa-bars hamburger-menu" onclick="openSidebar()" id="hamburger-menu"></i>
+      
+      <div class="sidebar" id="sidebar">
+          <i class="fa-solid fa-circle-xmark close-menu" onclick="closeSidebar()"></i>
+          <a href="./pages/festive gifting.html"><p class="pages-text1">Festive Gifting</p></a>
+          <a href="#"><p class="pages-text1">Grocery</p></a>
+          <a href="./pages/bakery-shop.html"><p class="pages-text1">Bakery Shop</p></a>
+          <a href="./pages/ExoticFruit.html"><p class="pages-text1">Exotic Fruits</p></a>
+          <a href="#"><p class="pages-text1">Blog</p></a>
+          <a href="./pages/Beverages/beverages.html"><p class="pages-text1">Beverages</p></a>
+          <a href="#"><p class="pages-text1">Snacking</p></a>
+      </div>
+
+
+    <div class="overlay" id="overlay">
+        <div class="modal">
+            <img src="./icon/close.png" class="close-icon" alt="Close" onclick="closeModal()" />
+            <form class="form">
+                <h1 class="form-header">Login</h1>
+
+                <input type="text" placeholder="Enter your name" class="form-input" />
+
+                <input type="email" placeholder="Enter your email" class="form-input" />
+
+                <input type="text" placeholder="Enter your phone number" class="form-input" />
+
+                <input type="text" placeholder="Enter your Address" class="form-input" />
+            </form>
+
+            <button type="button" class="btn-login">
+                Login
+            </button>
+        </div>
+    </div>
+
+   
+
+
+    
+    <div>
+
+        <!-- <div style="display: none;">
+    <div class="container">
+        <img src="./img/carousol-3.jpg" class="slide" id="slide" />
+        <img src="./img/previous.png" class="icons-action icons-prev" onclick="prev()" />
+        <img src="./img/next.png" class="icons-action icons-next" onclick="next()" />
+    </div>
+</div> -->
+    <div class="container1">
+    <img src="./img/carousol-3.jpg" class="slide" id="slide" alt="slide" height="80%" width="100%" style="padding: 5px;">
+    <img src="./img/previous.png" class="icons-action icons-prev" onclick="prev()" />
+        <img src="./img/next.png" class="icons-action icons-next" onclick="next()" />
+    </div>
+    <p class="shop-by-category-text">SHOP BY CATEGORY</p>
+    <div class="shop-by-category-container">
+        <div class="category-image-container">
+            <a><img src="./img/exotic-fruits.png" class="category-img"></a>
+            <p class="category-text">Exotic Fruits</p>
+        </div>
+
+        <div class="category-image-container">
+            <a><img src="./img/meats.jpg" class="category-img"></a>
+            <p class="category-text">Meat and Seafood</p>
+        </div>
+
+        <div class="category-image-container">
+            <a><img src="./img/diary.jpg" class="category-img"></a>
+            <p class="category-text">Diary</p>
+        </div>
+
+        <div class="category-image-container">
+            <a><img src="./img/bread.png" class="category-img"></a>
+            <p class="category-text">Bread</p>
+        </div>
+
+        <div class="category-image-container">
+            <a><img src="./img/chocolate.png" class="category-img"></a>
+            <p class="category-text">Chocolates</p>
+        </div>
+
+        <div class="category-image-container">
+            <a><img src="./img/cheese.png" class="category-img"></a>
+            <p class="category-text">Cheese</p>
+        </div>
+
+        <div class="category-image-container">
+            <a><img src="./img/gifting.png" class="category-img"></a>
+            <p class="category-text">Gifts</p>
+        </div>
+
+        <div class="category-image-container">
+            <a><img src="./img/breakfast.png" class="category-img"></a>
+            <p class="category-text">Breakfast,Jams</p>
+        </div>
+
+        <div class="category-image-container">
+            <a><img src="./img/health.png" class="category-img"></a>
+            <p class="category-text">Health and Wellness</p>
+        </div>
+
+        <div class="category-image-container">
+            <a><img src="./img/grocery.png" class="category-img"></a>
+            <p class="category-text">Grocery</p>
+        </div>
+
+        <div class="category-image-container">
+            <a><img src="./img/beverages.png" class="category-img"></a>
+            <p class="category-text">Bevarages</p>
+        </div>
+
+        <div class="category-image-container">
+            <a><img src="./img/world-foods.png" class="category-img"></a>
+            <p class="category-text">Worlds foods</p>
+        </div>
+    </div>
+
+    <div>
+        <p class="shop-by-category-text">Shop By World Brands</p>
+    </div>
+    <div class="slider-container">
+        <img src="./img/slider-img-1.jpg" class="slider-img">
+        <img src="./img/slider-img-2.jpg" class="slider-img">
+        <img src="./img/slider-img-3.jpg" class="slider-img">
+        <img src="./img/slider-img-4.jpg" class="slider-img">
+        <img src="./img/slider-img-5.jpg" class="slider-img">
+        <img src="./img/slider-img-6.jpg" class="slider-img">
+    </div>
+
+    <div>
+        <p class="shop-by-category-text">What's Trending</p>
+    </div>
+    <div class="whats-trending-main-container">
+        <div class="whats-trending-container">
+            <img src="./img/pasta-sause.jpg" class="whats-trending-pasta-sause-image">
+            <p class="card-text">Barilla Arrabiata Pasta <br>Sauce 400G</p>
+            <div>
+                <button class="btn-1">MRP ₹499</button>
+                <button class="btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="whats-trending-container">
+            <img src="./img/apple.jpg" class="whats-trending-pasta-sause-image">
+            <p class="card-text">Apple Red Delicious <br>Washington</p>
+            <div>
+                <button class="btn-1">MRP ₹249</button>
+                <button class="btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="whats-trending-container">
+            <img src="./img/cheetos.jpg" class="whats-trending-pasta-sause-image">
+            <p class="card-text">Cheetos Corn Puffs <br>Jumbo Chips 255G </p>
+            <div>
+                <button class="btn-1">MRP ₹639</button>
+                <button class="btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="whats-trending-container">
+            <img src="./img/greek-yogart.jpg" class="whats-trending-pasta-sause-image">
+            <p class="card-text">Epigamia Natural Yoghurt <br>85G Cup</p>
+            <div>
+                <button class="btn-1">MRP ₹60</button>
+                <button class="btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="whats-trending-container">
+            <img src="./img/ferrero-rosher.jpg" class="whats-trending-pasta-sause-image">
+            <p class="card-text">Ferrero Rosher <br>85G </p>
+            <div>
+                <button class="btn-1">MRP ₹200</button>
+                <button class="btn-add-to-cart">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p class="shop-by-category-text">Discover More</p>
+    </div>
+    <div class="discover-more-button-container">
+        <button class="discover-more-button" id="offer" onmouseover="CardChanger('offer')">Offer</button>
+        <button class="discover-more-button" id="organic" onmouseover="CardChanger('organic')">Organic</button>
+        <button class="discover-more-button" id="healthy" onmouseover="CardChanger('healthy')">Healthy</button>
+        <button class="discover-more-button" id="gifts" onmouseover="CardChanger('gifts')">Gifts</button>
+    </div>
+    <div class="whats-trending-main-container">
+        <div class="whats-trending-container">
+            <img src="./img/offer-img-1.jpg" class="whats-trending-pasta-sause-image" id="img1" alt="Product 1">
+            <p class="card-text" id="txt-1">Real Good Chicken  <br>Breast Boneless 400gm</p>
+            <div>
+                <button class="btn-1 btn-11"><del>MRP ₹499</del></button>
+                <button class="btn-1 btn-11" id="btn1">MRP ₹399</button><br>
+                <div class="btn-atc-container">
+                    <button class="btn-add-to-cart btn-add-to-cart1">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="whats-trending-container">
+            <img src="./img/offer-img-2.jpg" class="whats-trending-pasta-sause-image" id="img2" alt="Product 2">
+            <p class="card-text" id="txt-2">Voila Little Millet  <br>Glutan free</p>
+            <div>
+                <button class="btn-1 btn-11"><del>MRP ₹160</del></button>
+                <button class="btn-1 btn-11" id="btn2">MRP ₹140</button><br>
+                <div class="btn-atc-container">
+                    <button class="btn-add-to-cart btn-add-to-cart1">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="whats-trending-container">
+            <img src="./img/offer-img-3.jpg" class="whats-trending-pasta-sause-image" id="img3" alt="Product 3">
+            <p class="card-text" id="txt-3">Mother Dairy Mishti Doi  <br>400G Cup</p>
+            <div>
+                <button class="btn-1 btn-11"><del>MRP ₹75</del></button>
+                <button class="btn-1 btn-11" id="btn3">MRP ₹69</button><br>
+                <div class="btn-atc-container">
+                    <button class="btn-add-to-cart btn-add-to-cart1">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="whats-trending-container">
+            <img src="./img/offer-img-4.jpg" class="whats-trending-pasta-sause-image" id="img4" alt="Product 4">
+            <p class="card-text" id="txt-4">Le Org cho Bar  <br>Rose Almost 75G</p>
+            <div>
+                <button class="btn-1 btn-11"><del>MRP ₹300</del></button>
+                <button class="btn-1 btn-11" id="btn4">MRP ₹289</button><br>
+                <div class="btn-atc-container">
+                    <button class="btn-add-to-cart btn-add-to-cart1">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="whats-trending-container">
+            <img src="./img/offer-img-5.jpg" class="whats-trending-pasta-sause-image" id="img5" alt="Product 5">
+            <p class="card-text" id="txt-5">Nutorus Cheese Mozzarella<br> Block 200</p>
+            <div>
+                <button class="btn-1 btn-11"><del>MRP ₹200</del></button>
+                <button class="btn-1 btn-11" id="btn5">MRP ₹180</button><br>
+                <div class="btn-atc-container">
+                    <button class="btn-add-to-cart btn-add-to-cart1">Add To Cart</button>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+</div>
+
+    <footer class="footer1">
+        <div class="footer-container">
+          <div>
+          <div class="footer-logo">
+            <img src="./icon/unnamed.png" class="Logo-image" height="30px">
+            <!-- <img src="./img/main-website-logo.webp" alt="" height="80px" width="220px"> -->
+            <p class="websitename">Freshify.com</p> <br>
+          </div>  
+            <div class="footer-social">
+              <a href="#"><img src="./icon/facebook.png" class="footer-img"></a>
+              <a href="#"><img src="./icon/instagram.png" class="footer-img"></a>
+              <a href="#"><img src="./icon/linkedin (1).png" class="footer-img"></a>
+              <a href="#"><img src="./icon/github.png" class="footer-img"></a>
+              <a href="#"><img src="./icon/twitter.png" class="footer-img"></a>
+            </div>
+          </div>
+          
+          <div class="footer-links">
+            <div class="footer-column">
+              <p class="column-title">Company</p>
+              <ul>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">For Partners</a></li>
+                <li><a href="#">Terms</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <p class="column-title">Partner Sites</p>
+              <ul>
+                <li><a href="#">Proptiger</a></li>
+                <li><a href="#">Grocery</a></li>
+                <li><a href="#">Veggies.com</a></li>
+                <li><a href="#">Grocery.com</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <p class="column-title">Explore</p>
+              <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Tasty Food</a></li>
+                <li><a href="#">Eating Map</a></li>
+                <li><a href="#">Interational</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 E-commerce Webpage. All rights reserved.</p>
+        </div>
+      </footer>
+
+
+
+    <script>
+
+        function openModal() {
+            const overlayElement = document.getElementById('overlay');
+            overlayElement.style.display = 'flex';
+        }
+
+        function closeModal() {
+            const overlayElement = document.getElementById("overlay");
+            overlayElement.style.display = "none";
+        }
+    
+
+
+        const images = [
+            "./img/carousol-1.jpg",
+            "./img/carousol-2.jpg",
+            "./img/carousol-3.jpg",
+            "./img/carousol-4.jpg"
+
+        ];
+
+        let index = 0;
+        const slide = document.getElementById("slide");
+
+        function next() {
+            if (index < images.length - 1) {
+                index++;
+            } else {
+                index = 0;
+            }
+
+            slide.src = images[index];
+        }
+
+        function prev() {
+            if (index > 0) {
+                index--;
+            } else {
+                index = images.length - 1;
+            }
+
+            slide.src = images[index];
+        }
+
+        function CardChanger(btnTxt){
+            const imageElement1 = document.getElementById("img1");
+            const textElement1 = document.getElementById("txt-1");
+            const buttonElement1 = document.getElementById("btn1");
+
+            const imageElement2 = document.getElementById("img2");
+            const textElement2 = document.getElementById("txt-2");
+            const buttonElement2 = document.getElementById("btn2");
+
+            const imageElement3 = document.getElementById("img3");
+            const textElement3 = document.getElementById("txt-3");
+            const buttonElement3 = document.getElementById("btn3");
+
+            const imageElement4 = document.getElementById("img4");
+            const textElement4 = document.getElementById("txt-4");
+            const buttonElement4 = document.getElementById("btn4");
+
+            const imageElement5 = document.getElementById("img5");
+            const textElement5 = document.getElementById("txt-5");
+            const buttonElement5 = document.getElementById("btn5");
+
+            if(btnTxt === "offer"){
+                imageElement1.src = "./img/offer-img-1.jpg";
+                textElement1.innerText = "Real Good Chicken  \n Breast Boneless 400gm";
+                buttonElement1.innerText = "MRP ₹399";
+
+                imageElement2.src = "./img/offer-img-2.jpg";
+                textElement2.innerText = "Voila Little Millet \n Glutan free";
+                buttonElement2.innerText = "MRP ₹140";
+
+                imageElement3.src = "./img/offer-img-3.jpg";
+                textElement3.innerText = "Mother Dairy Mishti Doi  \n 400G Cup";
+                buttonElement3.innerText = "MRP ₹160";
+
+                imageElement4.src = "./img/offer-img-4.jpg";
+                textElement4.innerText = "Le Org cho Bar  \n Rose Almost 75G";
+                buttonElement4.innerText = "MRP ₹289";
+
+                imageElement5.src = "./img/offer-img-5.jpg";
+                textElement5.innerText = "Nutorus Cheese Mozzarella \n Block 200";
+                buttonElement5.innerText = "MRP ₹399";
+            }
+
+            else if(btnTxt === "organic"){
+                imageElement1.src = "./img/organic-img-1.jpg";
+                textElement1.innerText = "Conscious Food Organic \n Sprouted Rag 200G Pack";
+                buttonElement1.innerText = "MRP ₹114";
+
+                imageElement2.src = "./img/organic-img-2.jpg";
+                textElement2.innerText = "Conscious Food Sugar \n Raw 500G Pouch";
+                buttonElement2.innerText = "MRP ₹99";
+
+                imageElement3.src = "./img/organic-img-3.jpg";
+                textElement3.innerText = "Conscious Food Organic \n Tail Millet 500G Pack";
+                buttonElement3.innerText = "MRP ₹130";
+
+                imageElement4.src = "./img/organic-img-4.jpg";
+                textElement4.innerText = "Natures Green Peas \n 500G Pouch";
+                buttonElement4.innerText = "MRP ₹129";
+
+                imageElement5.src = "./img/organic-img-5.jpg";
+                textElement5.innerText = "Nourish Organics Ginger \n Oats Cookies 150G";
+                buttonElement5.innerText = "MRP ₹159";
+            }
+
+            else if(btnTxt === "healthy"){
+                imageElement1.src = "./img/healthy-1.jpg";
+                textElement1.innerText = "Borges olive oil Glass \n Bottle 1L"; 
+                buttonElement1.innerText = "MRP ₹1170";
+
+                imageElement2.src = "./img/healthy-2.jpg";
+                textElement2.innerText = "Banne Maman Preserve \n  Rasberry 370g ";
+                buttonElement2.innerText = "MRP ₹595";
+
+                imageElement3.src = "./img/healthy-3.jpg";
+                textElement3.innerText = "Amul Homogenised \n Standardisation Milk";
+                buttonElement3.innerText = "MRP ₹80";
+
+                imageElement4.src = "./img/healthy-4.jpg";
+                textElement4.innerText = "American Garden Barbeques \n Sauce";
+                buttonElement4.innerText = "MRP ₹449";
+
+                imageElement5.src = "./img/healthy-5.jpg";
+                textElement5.innerText = "The belgium Milk Chocolate \n Bar 100G";
+                buttonElement5.innerText = "MRP ₹399";
+            }
+
+            else if(btnTxt === "gifts"){
+                imageElement1.src = "./img/gifts-1.jpeg";
+                textElement1.innerText = "The Belgian Dark Orange Bar100G";
+                buttonElement1.innerText = "MRP ₹399";
+
+                imageElement2.src = "./img/gifts-2.jpg";
+                textElement2.innerText = "L Exclusif Organic Dark \n Chocolate Bar Seasalt 75 G";
+                buttonElement2.innerText = "MRP ₹140";
+
+                imageElement3.src = "./img/gifts-3.jpg";
+                textElement3.innerText = "Epigamia Artisanal \n Yoghurt 400G Cup";
+                buttonElement3.innerText = "MRP ₹160";
+
+                imageElement4.src = "./img/gifts-4.jpg";
+                textElement4.innerText = "Grey Agate Photo \n Frame";
+                buttonElement4.innerText = "MRP ₹259";
+
+                imageElement5.src = "./img/gifts-5.jpg";
+                textElement5.innerText = "Floral Elegance Twin \n Platter";
+                buttonElement5.innerText = "MRP ₹799";
+            }
+        }
+    </script>
+
+<script
+src="https://kit.fontawesome.com/10e1ccecc8.js"
+crossorigin="anonymous"
+></script>
+
+<script>
+    function openSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  const isVisible = sidebar.style.display === "block";
+  sidebar.style.display = isVisible ? "none" : "block";
+}
+
+function closeSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  const isVisible = sidebar.style.display === "block";
+  sidebar.style.display = isVisible ? "none" : "block";
+}
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assorted Cookies</title>
+    <link rel="stylesheet" href="./../../css/bakery-preview.css" />
+    <link rel="stylesheet" href="./../../css/bakery-shop.css">
+    <link rel="stylesheet" href="./../../css/navbar.css">
+    <link rel="stylesheet" href="./../../css/footer.css">
+  </head>
+  <body>
+
+    <div class="header-container">
+      <a href="./../../index.html"><img src="./../../img/main-website-logo.webp" class="website-logo"></a>
+      <button class="header-button header-button1">Enter Pin</button>
+      <button class="header-button header-button3">Mumbai</button>
+      <input placeholder="Start Shopping" class="input-start-shopping"/>
+      <!-- <button class="search-button"><img src="./icon/search.png" class="search-button-img"></button> -->
+      <button class="search-button"><i class="fa-solid fa-magnifying-glass search-button1" ></i></button>
+      <button class="header-button header-button2">Login</button>
+      <a href="#"><i class="fa-solid fa-cart-shopping shopping-cart"></i></a>
+
+      <!-- <a href="#"><img src="./icon/shopping-cart.png" class="shopping-cart"></a>     -->
+  </div>
+
+  <div class="pages-container">
+      <a href="./../festive gifting.html" ><p class="pages-text">Festive Gifting</p></a>
+      <a href="#"><p class="pages-text">Grocery</p></a>
+      <a href="./../bakery-shop.html"><p class="pages-text">Bakery Shop</p></a>
+      <a href="./../ExoticFruit.html"><p class="pages-text">Exotic Fruits</p></a>
+      <a href="#"><p class="pages-text">Blog</p></a>
+      <a href="./../Beverages/beverages.html"><p class="pages-text">Bevarages</p></a>
+      <a href="#"><p class="pages-text">Snacking</p></a>
+  
+  </div>
+
+  <i class="fa-solid fa-bars hamburger-menu" onclick="openSidebar()" id="hamburger-menu"></i>
+    
+    <div class="sidebar" id="sidebar">
+        <i class="fa-solid fa-circle-xmark close-menu" onclick="closeSidebar()"></i>
+        <a href="./../festive gifting.html"><p class="pages-text1">Festive Gifting</p></a>
+        <a href="#"><p class="pages-text1">Grocery</p></a>
+        <a href="./../bakery-shop.html"><p class="pages-text1">Bakery Shop</p></a>
+        <a href="./../ExoticFruit.html"><p class="pages-text1">Exotic Fruits</p></a>
+        <a href="#"><p class="pages-text1">Blog</p></a>
+        <a href="./../Beverages/beverages.html"><p class="pages-text1">Beverages</p></a>
+        <a href="#"><p class="pages-text1">Snacking</p></a>
+    </div>
+
+
+
+    <div class="container">
+      <a href="./../bakery-shop.html"><i class="fas fa-arrow-left back-icon"></i></button></a>
+
+      <img
+        src="./../../img/assortedcookies .webp"
+        alt="celebration-cakes"
+        id="mainimg"
+      />
+      <div id="priductimgcont">
+        <img
+          src="./../../img/assortedcookies .webp"
+          id="img1"
+          alt="celebration-cakes"
+          onclick="changeimg('./../../img/assortedcookies .webp')"
+        />
+        <img
+          src="./../../img/assort1.webp"
+          id="img1"
+          onclick="changeimg('./../../img/assort1.webp')"
+        />
+      </div>
+      <div class="details">
+        <h1>Assorted Cookies</h1>
+        <hr />
+        <p>Availability: In Stock</p>
+        <p>Product Type: Cookies</p>
+        <hr />
+        <p class="price" id="price" data-price="199.00">Rs. 199.00</p>
+        <div class="weight">
+          <label for="weight"> Weight: 250g </label>
+          <select id="weight">
+            <option>250g</option>
+          </select>
+        </div>
+        <div class="quantity">
+          <label for="quantity"> Quantity : </label> &nbsp;&nbsp;&nbsp;
+          <button>-</button>
+          <input id="quantity" type="text" value="1" />
+          <button>+</button>
+        </div>
+        <p class="subtotal">Total: Rs. 199.00</p>
+        <br />
+        <hr />
+        <h2>Description</h2>
+        <p class="text-contain">
+          (Contains Egg) Brownsalt's Almond Biscotti is a perfect snack with
+          your evening chai or coffee. Net Weight: 100 gms Ingredients: Flour,
+          sugar, eggs, almonds, baking powder & butter.
+        </p>
+        <br />
+        <br />
+        <div class="buttons">
+          <button class="add-to-cart">ADD TO CART</button>
+          <a href="./../payment.html" class="abc"><button type="button"  class="buy-now">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+        <div class="footer-logo">
+          <img src="./../../icon/unnamed.png" class="Logo-image" height="30px">
+          <!-- <img src="./img/main-website-logo.webp" alt="" height="80px" width="220px"> -->
+          <p class="websitename">Freshify.com</p> <br>
+        </div>  
+          <div class="footer-social">
+            <a href="#"><img src="./../../icon/facebook.png" class="footer-img"></a>
+            <a href="#"><img src="./../../icon/instagram.png" class="footer-img"></a>
+            <a href="#"><img src="./../../icon/linkedin (1).png" class="footer-img"></a>
+            <a href="#"><img src="./../../icon/github.png" class="footer-img"></a>
+            <a href="#"><img src="./../../icon/twitter.png" class="footer-img"></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <p class="column-title">Company</p>
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">For Partners</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="column-title">Partner Sites</p>
+            <ul>
+              <li><a href="#">Proptiger</a></li>
+              <li><a href="#">Grocery</a></li>
+              <li><a href="#">Veggies.com</a></li>
+              <li><a href="#">Grocery.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="column-title">Explore</p>
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Tasty Food</a></li>
+              <li><a href="#">Eating Map</a></li>
+              <li><a href="#">Interational</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 E-commerce Webpage. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./../../js/bakery-shop.js"></script>
+
+    <script src="https://kit.fontawesome.com/10e1ccecc8.js" crossorigin="anonymous"></script>
+  </body>
+</html>

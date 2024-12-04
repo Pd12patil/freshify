@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bakery Shop</title>
+    <link rel="icon" type="image/x-icon" href="./../icon/unnamed.png">
+    <link rel="stylesheet" href="./../css/bakery-shop.css" />
+    <link rel="stylesheet" href="./../css/shop.css" />
+    <link rel="stylesheet" href="./../css/navbar.css">
+    <link rel="stylesheet" href="./../css/footer.css">
+
+    <style>
+      @media (max-width: 1024px) {
+        .container1, .container {
+           width: 80%;
+        }  
+        .card1, .card {
+          width: 80%;
+        }
+  }
+
+    </style>
+  </head>
+  <body>
+    <div class="header-container">
+      <a href="./../index.html"><img src="./../img/main-website-logo.webp" class="website-logo"></a>
+      <button class="header-button header-button1">Enter Pin</button>
+      <button class="header-button header-button3">Mumbai</button>
+      <input placeholder="Start Shopping" class="input-start-shopping"/>
+      <!-- <button class="search-button"><img src="./icon/search.png" class="search-button-img"></button> -->
+      <button class="search-button"><i class="fa-solid fa-magnifying-glass search-button1" ></i></button>
+      <button class="header-button header-button2">Login</button>
+      <a href="#"><i class="fa-solid fa-cart-shopping shopping-cart"></i></a>
+
+      <!-- <a href="#"><img src="./icon/shopping-cart.png" class="shopping-cart"></a>     -->
+  </div>
+
+  <div class="pages-container">
+      <a href="festive gifting.html" ><p class="pages-text">Festive Gifting</p></a>
+      <a href="#"><p class="pages-text">Grocery</p></a>
+      <a href="./bakery-shop.html"><p class="pages-text">Bakery Shop</p></a>
+      <a href="ExoticFruit.html"><p class="pages-text">Exotic Fruits</p></a>
+      <a href="#"><p class="pages-text">Blog</p></a>
+      <a href="./Beverages/beverages.html"><p class="pages-text">Bevarages</p></a>
+      <a href="#"><p class="pages-text">Snacking</p></a>
+  
+  </div>
+
+  <i class="fa-solid fa-bars hamburger-menu" onclick="openSidebar()" id="hamburger-menu"></i>
+    
+    <div class="sidebar" id="sidebar">
+        <i class="fa-solid fa-circle-xmark close-menu" onclick="closeSidebar()"></i>
+        <a href="festive gifting.html"><p class="pages-text1">Festive Gifting</p></a>
+        <a href="#"><p class="pages-text1">Grocery</p></a>
+        <a href="bakery-shop.html"><p class="pages-text1">Bakery Shop</p></a>
+        <a href="ExoticFruit.html"><p class="pages-text1">Exotic Fruits</p></a>
+        <a href="#"><p class="pages-text1">Blog</p></a>
+        <a href="./Beverages/beverages.html"><p class="pages-text1">Beverages</p></a>
+        <a href="#"><p class="pages-text1">Snacking</p></a>
+    </div>
+
+
+    <div class="container-img">
+      <div class="hero-content">
+        <h1 class="main-head">TASTE THE MAGIC OF OUR</h1>
+        <h1 class="premium">
+          Premium Cakes With a dash of artistry
+        </h1>
+        <p class="para">Explore Celebration Cakes by Brownsalt</p>
+        <a href="#celebration-cakes" class="cta-button">SHOP CAKES</a>
+      </div>
+    </div>
+    <h1 class="main-head1">Our Categories</h1>
+    <div class="container">
+      <div class="card">
+        <a href="#celebration-cakes">
+          <img
+            src="./../img/celebration-cales.jpg"
+            alt="Celebration-cake"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label">Celebration Cakes</div>
+      </div>
+      <div class="card">
+        <a href="#cookies">
+          <img src="./../img/cookies.jpg" alt="cookies" height="200" width="300"
+        /></a>
+        <div class="label">Cookies</div>
+      </div>
+      <div class="card">
+        <img
+          src="./../img/tea-cakes.jpg"
+          alt="tea-cakes"
+          height="200"
+          width="300"
+        />
+        <div class="label">Tea Cakes</div>
+      </div>
+      <div class="card">
+        <a href="#chocolates">
+          <img
+            src="./../img/chocolates.jpg"
+            alt="Chocolates"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label">Chocolates</div>
+      </div>
+      <div class="card">
+        <a href="#granola">
+          <img src="./../img/granola.jpg" alt="Granola" height="200" width="300"
+        /></a>
+        <div class="label">Granola</div>
+      </div>
+      <div class="card">
+        <img src="./../img/gifting.jpg" alt="Gifting" height="200" width="300" />
+        <div class="label">Gifting</div>
+      </div>
+    </div>
+
+    <!-- <section> -->
+    <h1 class="heading" id="celebration-cakes">
+      <span class="label12">Celebration Cakes</span>
+    </h1>
+    <div class="container1">
+      <div class="card1">
+        <a href="./../pages/bakery-shop-pages/raspberry.html">
+          <img
+            src="./../img/im12/celebration-cales.webp"
+            alt="Celebration-cake"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label1">
+          <p>Raspberry Forest Cake</p>
+          <p><!-- <b>Weight : </b> 1 kg -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 999.00</p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <a href="./../pages/bakery-shop-pages/raspberry.html"><button class="btn btn2" type="submit">Buy Now</button></a>
+        </div>
+      </div>
+
+      <div class="card1">
+        <a href="./../pages/bakery-shop-pages/berry-cake.html">
+          <img
+            src="./../img/berry-cack.jpg"
+            alt="Chocolates"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label1">
+          <p>The Very Berry Cake</p>
+          <p><!-- <p><b>Weight : </b> 1/2 kg -->
+          <i class="fa-solid fa-indian-rupee-sign rupee1"></i> 1599.00 </p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <a href="./../pages/bakery-shop-pages/berry-cake.html"><button class="btn btn2" type="submit">Buy Now</button></a>
+        </div>
+      </div>
+      <div class="card1">
+        <a href="./../pages/bakery-shop-pages/classic-chocolate.html">
+          <img
+            src="./../img/Classic-Chocolate-Ganache-Cake.jpg"
+            alt="Granola"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label1">
+          <p>Classic Chocolate Ganache Cake</p>
+          <p><!-- <p><b>Weight : </b> 1kg -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 799.00 </p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <a href="./../pages/bakery-shop-pages/classic-chocolate.html"><button class="btn btn2" type="submit">Buy Now</button></a>
+        </div>
+      </div>
+      <div class="card1">
+        <a href="./../pages/bakery-shop-pages/pineapple.html">
+          <img
+            src="./../img/pineapple-cake.webp"
+            alt="cookies"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label1">
+          <p>Pineapple cake</p>
+          <p><!-- <p><b>Weight : </b> 1/2 kg -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 1199.00</p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+         <a href="./../pages/bakery-shop-pages/pineapple.html"><button class="btn btn2" type="submit">Buy Now</button></a>
+        </div>
+      </div>
+      <div class="card1">
+        <a href="./../pages/bakery-shop-pages/baked.html">
+          <img
+            src="./../img/baked-cheesecake.webp"
+            alt="tea-cakes"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label1">
+          <p>Baked NY Cheesecake with Blueberries</p>
+          <p><!-- <p><b>Weight : </b> 1 kg -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 1499.00 </p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <a href="./../pages/bakery-shop-pages/baked.html"><button class="btn btn2" type="submit">Buy Now</button></a>
+        </div>
+      </div>
+
+      <div class="card1">
+        <a href="./../pages/bakery-shop-pages/apple-cake.html">
+          <img
+            src="./../img/whole-wheat-apple .webp"
+            alt="Gifting"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label1">
+          <p>Whole Wheat Apple Cake with Maple Cream Cheese</p>
+          <p><!-- <p><b>Weight : </b> 1/2 kg -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 999.00 </p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <a href="./../pages/bakery-shop-pages/apple-cake.html"><button class="btn btn2" type="submit">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- </section> -->
+
+    <!-- <section> -->
+    <h1 class="heading" id="cookies"><span>Cookies</span></h1>
+    <div class="container1">
+      <div class="card1">
+        <a href="./../pages/bakery-shop-pages/almond.html">
+          <img
+            src="./../img/almond-biscotti.webp"
+            alt="Celebration-cake"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label1">
+          <p>Almond Biscotti</p>
+          <p><!-- <p><b>Weight : </b> 100g -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 99.00</p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <a href="./../pages/bakery-shop-pages/almond.html"><button class="btn btn2" type="submit">Buy Now</button></a>
+        </div>
+      </div>
+
+      <div class="card1">
+        <a href="./../pages/bakery-shop-pages/assorted.html">
+          <img
+            src="./../img/assortedcookies .webp"
+            alt="Chocolates"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label1">
+          <p>Assorted Cookies</p>
+          <p><!-- <p><b>Weight : </b> 250g -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 199.00 </p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <a href="./../pages/bakery-shop-pages/assorted.html"><button class="btn btn2" type="submit">Buy Now</button></a>
+        </div>
+      </div>
+      <div class="card1">
+        <img
+          src="./../img/roastedalmondsq.webp"
+          alt="Granola"
+          height="200"
+          width="300"
+        />
+        <div class="label1">
+          <p>Roasted Almond & Oatmeal Cookies ( Whole wheat )</p>
+          <p><!-- <p><p><b>Weight : </b> 300g -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 499.00</p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <button class="btn btn2" type="submit">Buy Now</button>
+        </div>
+      </div>
+      <div class="card1">
+        <img
+          src="./../img/Chocolateoatmealsq.webp"
+          alt="cookies"
+          height="200"
+          width="300"
+        />
+        <div class="label1">
+          <p>Signature Chocolate and Oatmeal Cookies</p>
+          <p><!-- <p><b>Weight : </b> 250g -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 349.00 </p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <button class="btn btn2" type="submit">Buy Now</button>
+        </div>
+      </div>
+      <div class="card1">
+        <img
+          src="./../img/coconutcookies.webp"
+          alt="tea-cakes"
+          height="200"
+          width="300"
+        />
+        <div class="label1">
+          <p>Coconut Crunch Cookies</p>
+          <p><!-- <p><b>Weight : </b> 150g -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 149.00</p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <button class="btn btn2" type="submit">Buy Now</button>
+        </div>
+      </div>
+
+      <div class="card1">
+        <img
+          src="./../img/honeyoatcrumblecookie.webp"
+          alt="Gifting"
+          height="200"
+          width="300"
+        />
+        <div class="label1">
+          <p>Honey Oatmeal Cookies</p>
+          <p><!-- <p><b>Weight : </b> 150g -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 99.00 </p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <button class="btn btn2" type="submit">Buy Now</button>
+        </div>
+      </div>
+    </div>
+    <!-- </section> -->
+
+    <!-- <section> -->
+    <h1 class="heading" id="chocolates"><span>Chocolates</span></h1>
+    <div class="container1">
+      <div class="card1">
+        <a href="./../pages/bakery-shop-pages/chocolate-barks.html">
+          <img
+            src="./../img/chocolates.jpg"
+            alt="Celebration-cake"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label1">
+          <p>Rose Pistachio Cranberry & Chocolate Barks</p>
+          <p><!-- <p><b>Weight : </b> 120g -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 299.00</p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <a href="./../pages/bakery-shop-pages/chocolate-barks.html"><button class="btn btn2" type="submit">Buy Now</button></a>
+        </div>
+      </div>
+
+      <div class="card1">
+        <a href="./../pages/bakery-shop-pages/luvlt-chocorich.html">
+          <img
+            src="./../img/luvlt1.jpg"
+            alt="Celebration-cake"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label1">
+          <p>LuvIt. Chocorich</p>
+          <p><!-- <p><b>Weight : </b> 480g -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 315.00 </p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <a href="./../pages/bakery-shop-pages/luvlt-chocorich.html"><button class="btn btn2" type="submit">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- </section> -->
+
+    <!-- <section> -->
+    <h1 class="heading" id="granola"><span>Granola</span></h1>
+    <div class="container1">
+      <div class="card1">
+        <a href="./../pages/bakery-shop-pages/almond-granola.html">
+          <img
+            src="./../img/almond1.webp"
+            alt="Celebration-cake"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label1">
+          <p>Almond and Cranberry Granola</p>
+          <p><!-- <p><b>Weight : </b> 250g -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 499.00</p>
+          <!-- <br /> -->
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <a href="./../pages/bakery-shop-pages/almond-granola.html"><button class="btn btn2" type="submit">Buy Now</button></a>
+        </div>
+      </div>
+
+      <div class="card1">
+        <a href="./../pages/bakery-shop-pages/honey.html">
+          <img
+            src="./../img/honey1.webp"
+            alt="Celebration-cake"
+            height="200"
+            width="300"
+        /></a>
+        <div class="label1">
+          <p>Honey and Hazelnut Granola</p>
+          <p><!-- <p><b>Weight : </b> 250g -->
+          <i class="fa-solid fa-indian-rupee-sign"></i> 449.00</p>
+          
+          <button class="btn btn1" type="button">Add to Cart</button>
+          <a href="./../pages/bakery-shop-pages/honey.html"><button class="btn btn2" type="submit">Buy Now</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- </section> -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div>
+        <div class="footer-logo">
+          <img src="./../icon/unnamed.png" class="Logo-image" height="30px">
+          <!-- <img src="./img/main-website-logo.webp" alt="" height="80px" width="220px"> -->
+          <p class="websitename">Freshify.com</p> <br>
+        </div>  
+          <div class="footer-social">
+            <a href="#"><img src="./../icon/facebook.png" class="footer-img"></a>
+            <a href="#"><img src="./../icon/instagram.png" class="footer-img"></a>
+            <a href="#"><img src="./../icon/linkedin (1).png" class="footer-img"></a>
+            <a href="#"><img src="./../icon/github.png" class="footer-img"></a>
+            <a href="#"><img src="./../icon/twitter.png" class="footer-img"></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <p class="column-title">Company</p>
+            <ul>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">For Partners</a></li>
+              <li><a href="#">Terms</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="column-title">Partner Sites</p>
+            <ul>
+              <li><a href="#">Proptiger</a></li>
+              <li><a href="#">Grocery</a></li>
+              <li><a href="#">Veggies.com</a></li>
+              <li><a href="#">Grocery.com</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <p class="column-title">Explore</p>
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Tasty Food</a></li>
+              <li><a href="#">Eating Map</a></li>
+              <li><a href="#">Interational</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 E-commerce Webpage. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/10e1ccecc8.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+
+      function openSidebar() {
+          const sidebar = document.getElementById("sidebar");
+          const isVisible = sidebar.style.display === "block";
+          sidebar.style.display = isVisible ? "none" : "block";
+      }
+
+      function closeSidebar() {
+          const sidebar = document.getElementById("sidebar");
+          const isVisible = sidebar.style.display === "block";
+          sidebar.style.display = isVisible ? "none" : "block";
+      }
+      
+  </script>
+  </body>
+</html>
