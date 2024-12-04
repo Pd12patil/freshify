@@ -73,6 +73,7 @@ body {
     margin:35px 3px; ;
 }
 .pages-container{
+    justify-content: center;
     background-color: #18283f;
     color: aliceblue;
     font-family: "Kumbh Sans", sans-serif;

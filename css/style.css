@@ -5,7 +5,7 @@ body{
 .font_style{
     font-family: "Kumbh Sans", sans-serif;
 }
-.header-container{
+/* .header-container{
     display:flex;
 }
 .website-logo{
@@ -60,7 +60,7 @@ body{
     
     height: 35px;
     border:none;
-}
+} */
 .overlay {
     background-color: rgba(0, 0, 0, 0.875);
     position: fixed;
@@ -121,11 +121,11 @@ body{
 }
    
 
-.shopping-cart{
+/* .shopping-cart{
     height:40px;
     margin:35px 3px; ;
-}
-.pages-container{
+} */
+/* .pages-container{
   background-color: #18283f;
   color: aliceblue;
   font-family: "Kumbh Sans", sans-serif;
@@ -142,7 +142,7 @@ body{
   cursor: pointer;
   text-decoration: none;
   color: aliceblue;
-}
+} */
  
   /* .container { */
     /* width: fit-content; */
